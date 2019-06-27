@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,14 @@
     
 </body>
 <script>
-    var nome = window.prompt("Qaul eh seu nome?")
+    var nome = window.prompt("Qual eh seu nome?")
     var salario = window.prompt("Qual eh seu salario?")
-    var salEmBrl = salario.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'}) 
+    var salEmBrl = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
     var salEmEuro = (salario * 0.22).toLocaleString('pt-BR', {style: 'currency' , currency: 'EUR'})
     var salEmDolar = (salario * 0.26).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
     document.writeln(`Ola, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br/>`)
-    document.writeln(`Seu salario em BRL: ${salEmBrl}<br/>`)
-    document.writeln(`Seu salario em EUR: ${salEmEuro}<br/>`)
-    document.writeln(`Seu salario em USD: ${salEmDolar}<br/>`)
+    document.writeln(`Seu salario em BRL: ${salEmBrl} <br/>`)
+    document.writeln(`Seu salario em EUR: ${salEmEuro} <br/>`)
+    document.writeln(`Seu salario em USD: ${salEmDolar} <br/>`)
 </script>
 </html>
