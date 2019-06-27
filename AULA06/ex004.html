@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    var nome = window.prompt("Qaul eh seu nome?")
+    var salario = window.prompt("Qual eh seu salario?")
+    var salEmBrl = salario.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'}) 
+    var salEmEuro = (salario * 0.22).toLocaleString('pt-BR', {style: 'currency' , currency: 'EUR'})
+    var salEmDolar = (salario * 0.26).toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+    document.writeln(`Ola, <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br/>`)
+    document.writeln(`Seu salario em BRL: ${salEmBrl}<br/>`)
+    document.writeln(`Seu salario em EUR: ${salEmEuro}<br/>`)
+    document.writeln(`Seu salario em USD: ${salEmDolar}<br/>`)
+</script>
+</html>
