@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando Numeros</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>Somando e Multiplicando Valores</p>
+    <input type="number" name="txt1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Clicar" onclick="somar()" ondblclick="multiplicar()">
+    <div id="res"></div>
+    <script>
+        function somar() {
+            var input1 = document.getElementById("txtn1")
+            var input2 = document.getElementById("txtn2")
+            var resultado = document.getElementById("res")
+            var n1 = Number.parseInt(input1.value)
+            var n2 = Number.parseInt(input2.value)
+            var soma = n1 + n2
+            resultado.innerHTML = `A soma dos numeros ${n1} e ${n2} eh: ${soma}`
+        }
+        function multiplicar() {
+            var input1 = document.getElementById("txtn1")
+            var input2 = document.getElementById("txtn2")
+            var resultado = document.getElementById("res")
+            var n1 = Number.parseInt(input1.value)
+            var n2 = Number.parseInt(input2.value)
+            var multiplicacao = n1 * n2
+            resultado.innerHTML = `A multiplicacao dos numeros ${n1} e ${n2} eh: ${multiplicacao}`
+        }
+    </script>
+</body>
+</html>

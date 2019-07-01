@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primeiro passos com o DOM</title>
+    <style>
+        body {
+            background: rgb(42, 42, 216);
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p> 
+    <p>Aprendendo a usar o <strong>Document Object Model</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        var div = document.getElementById("msg")
+        var divQuerySelector = document.querySelector('div#msg')
+        document.writeln(`Esta escrito: ${p1.innerHTML}`)
+        document.writeln(`Esta escrito na div: ${div.innerHTML}`)
+    </script>
+</body>
+</html>
